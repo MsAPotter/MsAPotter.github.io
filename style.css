@@ -1,185 +1,201 @@
-/* CSS files add styling rules to your content */
+/* https://jigsaw.w3.org/css-validator/validator.html.en*/
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-}
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: url("https://images.pexels.com/photos/748626/pexels-photo-748626.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); 
+    /*background: url("https://images.pexels.com/photos/7100/iphone-desk-laptop-notebook.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500");*/
+    background-attachment: fixed;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+/* NAVIGATION SECTION */
 
-body {
-  background: url("https://images.pexels.com/photos/7109/laptop-notebook-clean-hero.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); 
-  /*background: url("https://images.pexels.com/photos/7100/iphone-desk-laptop-notebook.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500");*/
-  /*background-size: cover;*/
-  background-repeat: no-repeat;
-  background-position: center; 
-  background-attachment: fixed;
-  background-height: 500px;
-}
+  .nav {
+    background-color: rgb(7, 37, 87);
+    background-color: rgba(7, 37, 87, 0.99);
+  }
+  
+  .nav ul {
+    text-align: center;
+  }
+  
+  .nav li {
+    display: inline-block;
+    /*font-size: 16px;*/
+    font-weight: 400;
+    letter-spacing: .1em;
+    list-style-type: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .nav li a{
+    color: white;
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .nav li:hover {
+    /* background-color: rgba(255,255,255,.6); */
+    background-color: rgb(117,117,117);
+    background-color: rgba(117,117,117, 0.3);
+    border-radius: 5px;
+    color: #757575;
+  }
+  
+  /* DIV CONTAINERS / SECTIONS */
 
-.nav {
-  background-color: #303030;
-  opacity: 0.6;
-}
+  .div {
+    color: #757575;
+    font-weight: 300;
+    height: 600px;
+    line-height: 1.6;
+    padding-top: 20px;
+    text-align: center;
+    /* text-shadow: #262626; */
+  }
 
-.nav ul {
-  text-align: center;
-}
+  hr {
+    background-image: linear-gradient(to right, rgba(117,117,117, 0), rgba(117,117,117, 0.75), rgba(117,117,117, 0));
+    border: 0;
+    height: 2px;
+    margin: 0 auto;
+    width: 50%;
+  }
 
-.nav li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 10px 20px;
-  /*font-size: 16px;*/
-  text-align: center;
-  letter-spacing: .1em;
-  font-weight: 400;
-  text-transform: uppercase;
-}
+  h2 {
+    font-size: 42px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
 
-.nav li a{
-  text-decoration: none;
-  color: white;
-  font-size: 1em;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-.nav li:hover {
-  background-color: rgba(255,255,255,.6);
-  color: white;
-}
+  /* INTRO SECTION */
 
-.div {
-  padding: 50px;
-  height: 600px;
-  line-height: 1.6;
-  color: #757575;
-  text-align: center;
-  font-weight: 300;
-}
-
-.intro {
-  margin-top: 175px;
-  font-weight: 500;
-  color: #262626;
-  text-shadow: #262626;
-  /* color: #80ffff;
-  text-shadow: #80ffff; */
-  font-size: 22px;
-}
+  .intro {
+    /* color: #262626; */
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 40px;
+  }
 
 /* ABOUT ME SECTION */
 
 .about-me {
-background: #ffffff; 
+  /* background: #ffffff;  */
+  background-color: rgb(7, 37, 87);
+  background-color: rgba(7, 37, 87, 0.99);
 }
-.about-me-container {
-display: flex;
-justify-content: center;
-}
-.headshot {
-  background-image: url("./images/iFLY\ Loudon\ Mar\ 23\ 2019\ 836am\ copy.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 300px;
-  width: 300px;
-  border-radius: 100px;
-  margin-top: 50px;
-  margin-right: 300px;
-}
-.about-me-writeup {
+
+  .about-me-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  width: 500px;
-  margin-top: 50px;
-  font-weight: 400;
 }
+  .headshot {
+    background-image: url("./images/iFLY\ Loudon\ Mar\ 23\ 2019\ 836am.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #757575;;
+    border-radius: 150px;
+    height: 300px;
+    margin-right: 200px;
+    margin-top: 50px;
+    width: 300px;
+  }
+  .about-me-writeup {
+    /* color: white; */
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    justify-content: center;
+    margin-top: 50px;
+    width: 500px;
+  }
 
-/* PROJECTS SECTION */
+  /* PROJECTS SECTION */
 
-.portfolio {
-  background: #f7f7f7; 
-}
-.projects-container {
+  .portfolio {
+    /* background: #f7f7f7;  */
+    background-color: rgb(2, 12, 27);
+  }
+  .projects-container {
+    align-content: center;
     display: flex;
     justify-content: space-around;
-    align-content: center;
     margin-top: 30px;
+    }
+  .project {
+    border: 1px solid gray;
+    height: 300px;
+    width: 300px;
   }
-.project {
-  border: 1px solid gray;
-  width: 300px;
-  height: 300px;
-}
 
 /* SKILLS SECTION */
 
 .skills {
-  background: #ffffff;
-}
-
-.testimonials {
-  background: #f7f7f7; 
+  background-color: rgb(7, 37, 87);
+  background-color: rgba(7, 37, 87, 0.99);
   }
 
-h2 {
-  font-size: 42px;
+.m-skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.icons {
+  align-items: center;
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255,0.8);
+  border: 2px solid rgb(117,117,117);
+  color: #757575;
+  display: flex;
+  flex-direction: column;
   font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+  margin: 10px;
+}
+img {
+  margin: 5px;
+  width: 100px;
 }
 
-section {
-  display: inline;
-  width: 33%;
-  margin: 30px 50px;
-}
 
-.skills li {
-  list-style-type: none;
+h3 {
+  margin: 40px 0 20px 0;
 }
 
 /* TESTIMONIALS */
 
+.testimonials {
+  /* background: #f7f7f7;  */
+  background-color: rgb(2, 12, 27);
+  }
+
 .quotes {
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-around;
-}
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
 
 .quote-1, .quote-2 {
-background-color: #757575;
-color: white;
-width: 500px;
-padding: 20px;
-border-radius: 5px;
+  /* background-color: #757575; */
+  background-color: rgb(117,117,117);
+  background-color: rgba(117,117,117, 0.3);
+  border-radius: 5px;
+  color: white;
+  padding: 20px;
+  width: 500px;
 }
 
-/* FOOTER */
+  /* FOOTER */
 
-/* footer {
-  background-color: #303030;
-  height: 150px;
-  padding: 50px;
-  font-weight: 400;
-  font-size: 18px;
-  margin: 0 auto;
-  border: 3px solid red;
-}
-button {
-  padding: 10px;
-  height: 40px;
-  margin: 0 auto;
-  border: 3px solid red;
-}
-.resume-button {
-  font-size: 16px;
-  margin: 0 auto;
-  background-color: #757575;
-}
-a {
-  text-decoration: none;
-  color: blue;
-  color-shadow: white;
-} */
