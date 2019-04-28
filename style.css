@@ -29,11 +29,10 @@
   
   .nav li {
     display: inline-block;
-    /*font-size: 16px;*/
     font-weight: 400;
     letter-spacing: .1em;
     list-style-type: none;
-    padding: 10px 20px;
+    padding: 5px 20px;
     text-align: center;
     text-transform: uppercase;
   }
@@ -46,7 +45,6 @@
     text-transform: uppercase;
   }
   .nav li:hover {
-    /* background-color: rgba(255,255,255,.6); */
     background-color: rgb(117,117,117);
     background-color: rgba(117,117,117, 0.3);
     border-radius: 5px;
@@ -103,7 +101,8 @@
   justify-content: center;
 }
   .headshot {
-    background-image: url("./images/iFLY\ Loudon\ Mar\ 23\ 2019\ 836am.jpg");
+    background-image: url("./images/IMG_20190425_100102960.jpg");
+    background-position-y: center;
     background-repeat: no-repeat;
     background-size: cover;
     border: 3px solid #757575;;
@@ -141,6 +140,7 @@
     width: 300px;
   }
 
+
 /* SKILLS SECTION */
 
 .skills {
@@ -152,6 +152,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 50px;
 }
 .icons {
   align-items: center;
@@ -164,7 +165,7 @@
   font-weight: 500;
   margin: 10px;
 }
-img {
+.icons > img {
   margin: 5px;
   width: 100px;
 }

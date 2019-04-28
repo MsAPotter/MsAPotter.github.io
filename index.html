@@ -9,13 +9,14 @@
     <title>Atasha Potter Portfolio</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 
 <body>
   <header>
   </header>
   
-    <nav class="nav">
+    <!-- <nav class="nav">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Blog</a></li>
@@ -23,7 +24,27 @@
           <li><a href="./images/Atasha Potter Resume.pdf" target="_blank">Resume</a></li>
           <li><a href="mailto:Ms.APotter@gmail.com" target="_blank">Contact</a></li>
       </ul>
-    </nav>
+    </nav> -->
+
+
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Travel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="./images/Atasha Potter Resume.pdf" target="_blank">Resume</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="mailto:Ms.APotter@gmail.com" target="_blank">Contact</a>
+          </li>
+      </ul>
+
   
   <main>
   <div class="div intro">
@@ -39,8 +60,9 @@
           <div class="headshot"></div>
 
           <div class="about-me-writeup">
-             <p class="me">My childhood dream was to be the first woman NBA player. After reaching a peak height of  5’5” I decided to change tacks -- using her brain seemed the wiser career choice. <br> I'm a software engineer who craves an inclusive, culturally diverse work environment where teams work smart and play always.<br/>
-            <br/> I want to make things, that make a difference.</p>
+             <p class="me">Software engineer with 10+ years of analytical experience. My civilian career and military history reflect a dedicated work ethic, attention to detail, and desire for continuous learning. Originally from Hawaii, I have a laid back, island disposition and multi-cultural worldview.
+             <br/>
+            <br/>Work aside, I'm an avid reader and Star Wars/Harry Potter/Game of Thrones enthusiast. I'm currently reading The Tipping Point by Malcolm Gladwell.</p>
           </div>
       </div>
 
@@ -50,8 +72,30 @@
       <h2>Portfolio</h2>
       <hr>
       <div class="projects-container">
-        <div class="project">Cool GA project</div>
-        <div class="project">Cool GA project</div>
+        <!-- <div class="project">Cool GA project</div> -->
+        <div class="card" style="width: 18rem;">
+          <img src="./images/Game of Thrones screenshot2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Game of Thrones-themed Hangman Game</h5>
+            <p class="card-text">Pulls from an array of hard-coded GoT phrases, and user's guesses are made by clicking on the GoT character buttons whose name begins with that letter. 
+              <br>
+              Tech stack: JS | HTML | CSS</p>
+            <a href="https://msapotter.github.io/Game-of-Thrones-Hangman/" target="_blank" class="btn btn-secondary">Go there</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="./images/Rock Paper Scissors.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rock Paper Scissors <br>Game</h5>
+            <br>
+            <p class="card-text">Classic Rock Paper Scissors game with a twist based on the tv show "The Big Bang Theory". One of the first games I built; with the help of an online tutorial. 
+              <br>
+              Tech stack: vanilla JS | HTML | CSS</p>
+            <a href="https://msapotter.github.io/Rock-Paper-Scissors-Lizard-Spock/" target="_blank" class="btn btn-secondary">Go there</a>
+          </div>
+        </div>
+
         <div class="project">Another cool GA project</div>
         <div class="project">What! How good can she be?!</div>
       </div>
@@ -63,7 +107,7 @@
       <hr>
       
       
-        <h3>Marketable Skills</h3>
+        <h3>Languages | Frameworks | Tools</h3>
         <div class="m-skills-container">
         <div class="icons">
             <img src="./images/HTML5_Black_Logo.png" alt="">
@@ -78,6 +122,18 @@
                <p>Javascript</p>
                 </div>
         <div class="icons">
+            <img src="./images/MongoDB.png" alt="">
+              <p>MongoDB</p>
+            </div>
+        <div class="icons">
+            <img src="./images/Express.png" alt="">
+              <p>Express</p>
+            </div>
+        <div class="icons">
+          <img src="./images/Nodejs2.png" alt="">
+            <p>Node</p>
+              </div>
+        <div class="icons">
              <img src="./images/react.png" alt="">
                <p>React</p>
               </div>
@@ -87,10 +143,10 @@
              </div>
         </div>
 
-        <h3>Soft Skills</h3>
+        <!-- <h3>Soft Skills</h3>
         <div class="s-skills-container">
           Disciplined, Reliable, Professional, Hard worker, Quality, Constant learner, Builder, Team player, Professional
-        </div>
+        </div> -->
 
       
 
@@ -118,6 +174,11 @@
   <p><a href="mailto: Ms.APotter@gmail.com">Email Me</a></p>
     -->
   </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     
 </body>
 </html>
